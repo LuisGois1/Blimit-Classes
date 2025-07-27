@@ -1,14 +1,13 @@
-import express, { Request, Response } from 'express';
+import express from "express";
+import helloRoutes from "./routes/hello";
 
 const app = express();
 const PORT = 3000;
 
 app.use(express.json());
 
-app.get("/hello", (req: Request, res: Response) => {
-  return res.send("Hello World")
-})
+app.use("/hello", helloRoutes);
 
 app.listen(PORT, () => {
-    console.log(`🚀 Servidor rodando na porta ${PORT}`);
+  console.log(`🚀 Servidor rodando na porta ${PORT}`);
 });

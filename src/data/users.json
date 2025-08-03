@@ -1,1 +1,9 @@
-[]
+[
+  {
+    "name": "Luis",
+    "email": "Luis@bolsonaro.com",
+    "password": "$2b$10$7tvoF.274j.gaiqyNCtLbuUBN3oL610pYvJYqPkuJ1WDqCebIB0u.",
+    "deletedAt": null,
+    "id": 1
+  }
+]
